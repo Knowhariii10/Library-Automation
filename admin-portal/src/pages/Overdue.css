@@ -1,0 +1,177 @@
+.overdue-page {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.overdue-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.overdue-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.overdue-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    gap: var(--spacing-md);
+}
+
+.overdue-stats {
+    display: flex;
+    gap: var(--space-lg);
+}
+
+.overdue-stats .stat-mini {
+    flex: 1;
+    padding: var(--space-xl) var(--space-lg);
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    transition: var(--transition);
+}
+
+.overdue-stats .stat-mini:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.overdue-stats .label {
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.overdue-stats .value {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+/* Badge System */
+.badge {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-success {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.badge-danger {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.badge-secondary {
+    background: rgba(148, 163, 184, 0.1);
+    color: var(--text-secondary);
+}
+
+.badge-warning {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+}
+
+/* Overdue Table styling */
+.overdue-list {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.overdue-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.overdue-table th {
+    background: #1e293b;
+    padding: 20px 24px;
+    text-align: left;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #f8fafc;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid var(--primary);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.overdue-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    vertical-align: middle;
+}
+
+.overdue-table tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.days-badge {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.8125rem;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.user-name {
+    font-weight: 600;
+    color: var(--primary);
+    font-size: 0.9375rem;
+}
+
+.btn-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-left: auto;
+}
+
+.btn-icon:hover {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary);
+    border-color: var(--primary);
+}

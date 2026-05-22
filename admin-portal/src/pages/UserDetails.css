@@ -1,0 +1,238 @@
+.user-details-page {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.user-header.card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2xl);
+    padding: var(--space-2xl);
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(99, 102, 241, 0.1);
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.user-header:hover .user-profile-icon {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+.user-info h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #f8fafc;
+    margin-bottom: 4px;
+}
+
+.user-info .text-muted {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.user-meta {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: 16px;
+    align-items: center;
+}
+
+/* Badge System Integration */
+.user-meta .badge {
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.8125rem;
+}
+
+/* Tabs Styling */
+.user-tabs {
+    display: flex;
+    gap: var(--space-md);
+    padding: 6px;
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 14px;
+    width: fit-content;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 24px;
+    cursor: pointer;
+    color: var(--text-secondary);
+    border-radius: 10px;
+    transition: all 0.2s;
+    font-weight: 700;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.tab-btn.active {
+    color: white;
+    background: var(--primary);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+/* Overview Design */
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+}
+
+.overview-card {
+    padding: var(--space-2xl);
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    transition: var(--transition);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.overview-card h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-secondary);
+    font-weight: 700;
+}
+
+.stat-big {
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.overview-card p {
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.text-danger {
+    color: #ef4444 !important;
+}
+
+.text-success {
+    color: #10b981 !important;
+}
+
+.text-info {
+    color: #3b82f6 !important;
+}
+
+.overview-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+/* Professional Table Styling for Tabs */
+.tab-content .card {
+    padding: 0;
+    background: var(--bg-secondary);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.tab-content h3 {
+    padding: 24px 24px 0;
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    background: #1e293b;
+    padding: 18px 24px;
+    text-align: left;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    color: #f8fafc;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid var(--primary);
+}
+
+.table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    vertical-align: middle;
+}
+
+.table tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+/* Utility Badges */
+.badge-success {
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: #10b981 !important;
+}
+
+.badge-danger {
+    background: rgba(239, 68, 68, 0.1) !important;
+    color: #ef4444 !important;
+}
+
+.badge-warning {
+    background: rgba(245, 158, 11, 0.1) !important;
+    color: #f59e0b !important;
+}
+
+.badge-secondary {
+    background: rgba(148, 163, 184, 0.1) !important;
+    color: #94a3b8 !important;
+}
+
+.badge-pending {
+    background: rgba(245, 158, 11, 0.1) !important;
+    color: #f59e0b !important;
+}
+
+.badge-paid {
+    background: rgba(16, 185, 129, 0.1) !important;
+    color: #10b981 !important;
+}
+
+.badge-waived {
+    background: rgba(148, 163, 184, 0.1) !important;
+    color: #94a3b8 !important;
+}
